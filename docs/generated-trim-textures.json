@@ -1,0 +1,693 @@
+{
+  "schemaVersion": 1,
+  "minecraftVersion": "Java 1.21.1",
+  "generator": "scripts/generate-trim-textures.mjs",
+  "command": "node scripts/generate-trim-textures.mjs",
+  "verifyCommand": "node scripts/generate-trim-textures.mjs --check",
+  "runtimeDependencies": [
+    "Node.js",
+    "vendor/node/pngjs"
+  ],
+  "sourceEvidence": "docs/trim-texture-sources.json",
+  "atlas": {
+    "path": "public/minecraft/atlases/blocks.json",
+    "sha256": "1b388e8c8a29884fe116803caf00249ab9150e5490bab735c567fabe8b39df6b"
+  },
+  "algorithm": {
+    "jar": "neoforge-21.1.259-sources.jar",
+    "jarEntry": "net/minecraft/client/renderer/texture/atlas/sources/PalettedPermutations.java",
+    "sha256": "de28470975110a74245346bf1c372ef7cacc489d65672ca83528cb910fe2dbba",
+    "method": "createPaletteMapping",
+    "sourceLines": [
+      85,
+      109
+    ],
+    "pixelFormat": "NativeImage ABGR32; channel-equivalent RGBA conversion preserves RGB and alpha exactly.",
+    "rules": [
+      "Build a row-major map from nonzero-alpha key-palette RGB to corresponding permutation-palette RGBA; later duplicate key colors win.",
+      "Fully transparent source pixels are returned unchanged, including their RGB channels.",
+      "For other pixels use mapped target RGB/alpha, or original RGB with alpha 255 if absent from key palette.",
+      "Output alpha = floor(source alpha * mapped alpha / 255)."
+    ]
+  },
+  "inputs": [
+    {
+      "path": "public/minecraft/textures/trims/color_palettes/amethyst.png",
+      "sha256": "f0ea096ce6b315b6e4d58a62671b84f5bbcd2dff3cf4070c2632bc3183016904",
+      "bytes": 90
+    },
+    {
+      "path": "public/minecraft/textures/trims/color_palettes/copper.png",
+      "sha256": "6d9f3d7094fa0927eec0a4546dd7d35041bcdaaa6d3a434292f074093cf1aebf",
+      "bytes": 90
+    },
+    {
+      "path": "public/minecraft/textures/trims/color_palettes/diamond_darker.png",
+      "sha256": "3e537ebb4555118727e1de3a4fc6b2848bfd0e0d5dfe5b0c55da19229d8ad9ca",
+      "bytes": 90
+    },
+    {
+      "path": "public/minecraft/textures/trims/color_palettes/diamond.png",
+      "sha256": "52b8485c8c067bc20dc35f11c80e98d9c218c9f8279645bd0dcda6cc8710df0a",
+      "bytes": 90
+    },
+    {
+      "path": "public/minecraft/textures/trims/color_palettes/emerald.png",
+      "sha256": "3e9fe2851e9dcaf33b0bdcc56dfb7726ef12414b708facd543a59c00d045e24a",
+      "bytes": 90
+    },
+    {
+      "path": "public/minecraft/textures/trims/color_palettes/gold_darker.png",
+      "sha256": "fb5f5c58d29b548bd01384a9ab63c183801446e2dfbd5ab7a0b7fda55b2133ce",
+      "bytes": 90
+    },
+    {
+      "path": "public/minecraft/textures/trims/color_palettes/gold.png",
+      "sha256": "4884563e3b40c1c3ad39817a7d4a04ec581b921be88089ac4808cbd5bebba2f6",
+      "bytes": 91
+    },
+    {
+      "path": "public/minecraft/textures/trims/color_palettes/iron_darker.png",
+      "sha256": "05ef2aa63ffcbfe49b57aa792cdb457524f64858c53643a6e71e84265400007f",
+      "bytes": 89
+    },
+    {
+      "path": "public/minecraft/textures/trims/color_palettes/iron.png",
+      "sha256": "140d2856e61face91c3089de460aec6c521fbbdf828cf8eef60a129e5048864a",
+      "bytes": 90
+    },
+    {
+      "path": "public/minecraft/textures/trims/color_palettes/lapis.png",
+      "sha256": "36fe9b314c8e19a552714b13ae072dbc5b5e86188d0a0a595cf099de3d85d6d9",
+      "bytes": 90
+    },
+    {
+      "path": "public/minecraft/textures/trims/color_palettes/netherite_darker.png",
+      "sha256": "41c7b5dc1c12b703fa0b01c8f46548a4177d302c080d3fe4c066305a2f8bf8d7",
+      "bytes": 90
+    },
+    {
+      "path": "public/minecraft/textures/trims/color_palettes/netherite.png",
+      "sha256": "b168f0bec0fe151b269dc6aee4e9429ed226e93d127505a227b2a1a611e3c036",
+      "bytes": 90
+    },
+    {
+      "path": "public/minecraft/textures/trims/color_palettes/quartz.png",
+      "sha256": "db0d983a5f091b2db7574fcac21709372ca8efa62a7d02f9638014bb6559fd98",
+      "bytes": 90
+    },
+    {
+      "path": "public/minecraft/textures/trims/color_palettes/redstone.png",
+      "sha256": "754bbef1a2a186e8c100295ab0df74fe27c8d563d9509bf31c11820739551f53",
+      "bytes": 90
+    },
+    {
+      "path": "public/minecraft/textures/trims/color_palettes/trim_palette.png",
+      "sha256": "777f9755df5dbcbe43561dc6c88466edcfa9284a0ba1f7bdc7e0186e6d16a857",
+      "bytes": 69
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/boots_trim.png",
+      "sha256": "dbd4412ccef75b1198f89673f91af91e1f38553153e605a069872d517a61f7f5",
+      "bytes": 112
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/chestplate_trim.png",
+      "sha256": "3fe7af89fdab35cd44462ab45c67ee8ae141a0ac7a8163a8d126c7d04e11fad9",
+      "bytes": 144
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/helmet_trim.png",
+      "sha256": "39298bbd23e049bd4e637e2954d4ffd85548e4ef7f0adf2b6ee71aa802d8a287",
+      "bytes": 105
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/leggings_trim.png",
+      "sha256": "9e90ef9e3f03d550dc5ea1e2f969489df463ce4e6967da808921393951bfb062",
+      "bytes": 100
+    }
+  ],
+  "count": 56,
+  "outputs": [
+    {
+      "path": "public/minecraft/textures/trims/items/boots_trim_amethyst.png",
+      "texture": "trims/items/boots_trim",
+      "palette": "trims/color_palettes/amethyst",
+      "width": 16,
+      "height": 16,
+      "bytes": 179,
+      "sha256": "b9c643d9b0861d27deeda9c757bf3e326cc7e392e2fe7a500f548dbe65f01078",
+      "rgbaSha256": "86fa598ec6a5daebc74c4676d39d3a11f4ec5c6bba60414f7378cfac1a74d987"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/boots_trim_copper.png",
+      "texture": "trims/items/boots_trim",
+      "palette": "trims/color_palettes/copper",
+      "width": 16,
+      "height": 16,
+      "bytes": 172,
+      "sha256": "dc374fe3183874c1d0d52684f4587b88cc6d434de579125ecc08f072fe55c15e",
+      "rgbaSha256": "864e9a4311d13ab9e2380c32e3454c06554150a746911005b80744d5f695b406"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/boots_trim_diamond_darker.png",
+      "texture": "trims/items/boots_trim",
+      "palette": "trims/color_palettes/diamond_darker",
+      "width": 16,
+      "height": 16,
+      "bytes": 170,
+      "sha256": "b8ca6472a35b2865a511d1c619ffee82857b484e4d30c18d33bc123e65b4db51",
+      "rgbaSha256": "3146d924dcbec91229dd64171a48d78f4c58f8fa2cf6e40f2572b93d18eecd2d"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/boots_trim_diamond.png",
+      "texture": "trims/items/boots_trim",
+      "palette": "trims/color_palettes/diamond",
+      "width": 16,
+      "height": 16,
+      "bytes": 171,
+      "sha256": "cec00bee985710dc24f4079bb40b7d34e827f2357b1ffc2211b5bcbdd799384e",
+      "rgbaSha256": "e89a32e8cca9813b09a079fe42a44cef67ef3eb6135e292e584888651f3944a4"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/boots_trim_emerald.png",
+      "texture": "trims/items/boots_trim",
+      "palette": "trims/color_palettes/emerald",
+      "width": 16,
+      "height": 16,
+      "bytes": 171,
+      "sha256": "da15b6532c70dc11b1ca3ba7de7a0650cca82268cd941aff36c413b71e64f520",
+      "rgbaSha256": "b7df85df4f55cf9a3e0833877337b5994bd3fa537ce26f5833fc9bacb7ece5fa"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/boots_trim_gold_darker.png",
+      "texture": "trims/items/boots_trim",
+      "palette": "trims/color_palettes/gold_darker",
+      "width": 16,
+      "height": 16,
+      "bytes": 171,
+      "sha256": "9e4caa26502c0eb586c36f2ac5e9b7e3ac51dfafb9a39b098e1389fd51342e32",
+      "rgbaSha256": "1fc8a4377b7d84b6a4f2447480bc733cf535ef7bfcfd58a4b524dee72a0bb8c9"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/boots_trim_gold.png",
+      "texture": "trims/items/boots_trim",
+      "palette": "trims/color_palettes/gold",
+      "width": 16,
+      "height": 16,
+      "bytes": 167,
+      "sha256": "646f7580788c55b0af75cb8b51010dde356c8123ed3a540792654381bba9a551",
+      "rgbaSha256": "a7c31546cb652d078aa78b497e77d4244c7df3b7143d8d7d42d98873bc6d9422"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/boots_trim_iron_darker.png",
+      "texture": "trims/items/boots_trim",
+      "palette": "trims/color_palettes/iron_darker",
+      "width": 16,
+      "height": 16,
+      "bytes": 163,
+      "sha256": "3ae4c9398cf61ed7c22c2c496be0c3641c3e4d13f60d2501e199772c340d9173",
+      "rgbaSha256": "d20bb2dd7c0465874718738aa726247b3d7ed0d73ebb4c1ca4a14e384133c876"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/boots_trim_iron.png",
+      "texture": "trims/items/boots_trim",
+      "palette": "trims/color_palettes/iron",
+      "width": 16,
+      "height": 16,
+      "bytes": 164,
+      "sha256": "a749be7530b2d45936628bbec59d766a2ce7ae7e37907e7815f6e2acddb0dfe5",
+      "rgbaSha256": "dc94a88fd6cc622db03af6dae7aa4e32e94be7ab569d62dcc6e1c712e04b94ab"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/boots_trim_lapis.png",
+      "texture": "trims/items/boots_trim",
+      "palette": "trims/color_palettes/lapis",
+      "width": 16,
+      "height": 16,
+      "bytes": 170,
+      "sha256": "a3d6db6dcdb67c74cea8f9e88820c7c7aaf6a2fb86cab5f9b1c13e7e1e5e50ad",
+      "rgbaSha256": "7c64b2706b8e43acc56de09a3352da6781b80411c0699101367e2551cad64141"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/boots_trim_netherite_darker.png",
+      "texture": "trims/items/boots_trim",
+      "palette": "trims/color_palettes/netherite_darker",
+      "width": 16,
+      "height": 16,
+      "bytes": 156,
+      "sha256": "cd74ae317ff72235ee57e05bd3b208c067567093c69b5edef9d8c32e8e7847fb",
+      "rgbaSha256": "6c5378710bd16034e5023d0e58d4fc141f3cfb98389a53b544840cacd22dde7b"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/boots_trim_netherite.png",
+      "texture": "trims/items/boots_trim",
+      "palette": "trims/color_palettes/netherite",
+      "width": 16,
+      "height": 16,
+      "bytes": 162,
+      "sha256": "af457e5e47c9ccf1e500df4811bdbfc8dddf6af59d0b907f7ab4519f9169845d",
+      "rgbaSha256": "3417977ec8da65f5d7815866a09f80352c1ac0f65f9e47437ced73ee2b46f9b8"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/boots_trim_quartz.png",
+      "texture": "trims/items/boots_trim",
+      "palette": "trims/color_palettes/quartz",
+      "width": 16,
+      "height": 16,
+      "bytes": 173,
+      "sha256": "ce6b927ae89fd51c1b8627189f135da57ee9b8aa6a017a4545adb91d942ce5e2",
+      "rgbaSha256": "ebdc5188a5c0039b24707ae343c3bfe5e6d66612aff47f623444d01ab518c24f"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/boots_trim_redstone.png",
+      "texture": "trims/items/boots_trim",
+      "palette": "trims/color_palettes/redstone",
+      "width": 16,
+      "height": 16,
+      "bytes": 167,
+      "sha256": "11b563430ce3b6c50a2530c83a45a436d6b35962def038e9d5d36487716b0a25",
+      "rgbaSha256": "2d58ae882f85678134518e40fd22ed230743ad70bddcd330f16d78b2e80f3f85"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/chestplate_trim_amethyst.png",
+      "texture": "trims/items/chestplate_trim",
+      "palette": "trims/color_palettes/amethyst",
+      "width": 16,
+      "height": 16,
+      "bytes": 226,
+      "sha256": "8f450f8cf1c1f86140382fb24ecf2516db0a2020b0304489aecfd11c37a970a8",
+      "rgbaSha256": "46fa6ca50df678144b6673305f94c250a78a7cf4b472b9072fbe0ae454e20870"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/chestplate_trim_copper.png",
+      "texture": "trims/items/chestplate_trim",
+      "palette": "trims/color_palettes/copper",
+      "width": 16,
+      "height": 16,
+      "bytes": 224,
+      "sha256": "80927cf95fd47204a8354fe8c92769e28b41fceeb6b099a31b1b509d2c4db529",
+      "rgbaSha256": "f46fab5419ae5ffcff9c612b9ceed0616392c044d60a276166f9d58c3ec6045b"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/chestplate_trim_diamond_darker.png",
+      "texture": "trims/items/chestplate_trim",
+      "palette": "trims/color_palettes/diamond_darker",
+      "width": 16,
+      "height": 16,
+      "bytes": 201,
+      "sha256": "bccc43bcff91f15febe8067c829e8f16d3271bbb6771d6388655e9b827ff7d37",
+      "rgbaSha256": "f0425189b351aaadb57b6f10887ae961510e7d480a38edec1b6609c857f488eb"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/chestplate_trim_diamond.png",
+      "texture": "trims/items/chestplate_trim",
+      "palette": "trims/color_palettes/diamond",
+      "width": 16,
+      "height": 16,
+      "bytes": 225,
+      "sha256": "90db1b64c049bf3c43e8072a294dac75cb695a4ac9d03f0c5d2a9012fa53d654",
+      "rgbaSha256": "194bee82b333076ee730cd5685531c445c84734a59c281e602e97283f1d9821b"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/chestplate_trim_emerald.png",
+      "texture": "trims/items/chestplate_trim",
+      "palette": "trims/color_palettes/emerald",
+      "width": 16,
+      "height": 16,
+      "bytes": 222,
+      "sha256": "f992f0434d7438cf54c0e482232f5ca9404daaaf78ad10a09ba4c46d9f8a1432",
+      "rgbaSha256": "aaa04ff4044d200b4596b63dd6ea7ab592da2a4de4b115af71c302eeaf9277c7"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/chestplate_trim_gold_darker.png",
+      "texture": "trims/items/chestplate_trim",
+      "palette": "trims/color_palettes/gold_darker",
+      "width": 16,
+      "height": 16,
+      "bytes": 201,
+      "sha256": "331816cf5e0e590ef8ea75b81105aa1ee2e7695697263e7e84c694105330e896",
+      "rgbaSha256": "220d65dcb1cec6c9a7dd9c123274497a20273b5b9ddeba267d2ea8040604ea2e"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/chestplate_trim_gold.png",
+      "texture": "trims/items/chestplate_trim",
+      "palette": "trims/color_palettes/gold",
+      "width": 16,
+      "height": 16,
+      "bytes": 213,
+      "sha256": "54073fc7f1645dd97ef58e1263c0960858ca4ccb68e11b1636d31924dc32a5e2",
+      "rgbaSha256": "89733fc02ab3251687f1f5b642eb97fae43671ca0b06a2f964ac9fa544b0a1ce"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/chestplate_trim_iron_darker.png",
+      "texture": "trims/items/chestplate_trim",
+      "palette": "trims/color_palettes/iron_darker",
+      "width": 16,
+      "height": 16,
+      "bytes": 218,
+      "sha256": "b045bdabb906ebbf3372f7335d7e1389e83d2dea5966df363ae97861e08f3662",
+      "rgbaSha256": "a8a090d2d68f6aeb985d6a0daa83623a177367a8dedad439837148b500b9db9a"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/chestplate_trim_iron.png",
+      "texture": "trims/items/chestplate_trim",
+      "palette": "trims/color_palettes/iron",
+      "width": 16,
+      "height": 16,
+      "bytes": 199,
+      "sha256": "3272b7ae5da972efd68894a6aa3bebcec234a839a8b03ecf7cf655af9d998c4c",
+      "rgbaSha256": "039941b94d908c66e73b89b3e7ba65f5cd4fd2578a4a31d153d81537681397f3"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/chestplate_trim_lapis.png",
+      "texture": "trims/items/chestplate_trim",
+      "palette": "trims/color_palettes/lapis",
+      "width": 16,
+      "height": 16,
+      "bytes": 204,
+      "sha256": "50427d360b2ddbbc481d3164d09bb26cae6036ab282faac5b29b070c5fd0c8c2",
+      "rgbaSha256": "9d2680240fa62bb7a73e68fc2e3db0881851d6c40f348cc8200ae1eb545151db"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/chestplate_trim_netherite_darker.png",
+      "texture": "trims/items/chestplate_trim",
+      "palette": "trims/color_palettes/netherite_darker",
+      "width": 16,
+      "height": 16,
+      "bytes": 189,
+      "sha256": "5da942941126cbd9724a610079c26b85090ffe75847679376d0dd6f6f57c6321",
+      "rgbaSha256": "88bd2c3c7132c82b40be6892c768626ea52aa1cdac65713b7820e664421539c6"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/chestplate_trim_netherite.png",
+      "texture": "trims/items/chestplate_trim",
+      "palette": "trims/color_palettes/netherite",
+      "width": 16,
+      "height": 16,
+      "bytes": 194,
+      "sha256": "a31c79eb1ceed78ff4a0a60969ee15fb2ce61ef7be24d06e0885600cb50cf487",
+      "rgbaSha256": "5663d4dced2c775954ee3b9ad61c44b17494d64d8eca9767d3e564783af8480b"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/chestplate_trim_quartz.png",
+      "texture": "trims/items/chestplate_trim",
+      "palette": "trims/color_palettes/quartz",
+      "width": 16,
+      "height": 16,
+      "bytes": 204,
+      "sha256": "58f4bcd11785af26fbfc70d8c1e2066d3dff38380ed0a6f33f5d713555e88337",
+      "rgbaSha256": "92ab3a9f0ade0c47a7e1eaf063c0628e0819f3af473c469445c6b0fbce514853"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/chestplate_trim_redstone.png",
+      "texture": "trims/items/chestplate_trim",
+      "palette": "trims/color_palettes/redstone",
+      "width": 16,
+      "height": 16,
+      "bytes": 195,
+      "sha256": "89f53122c2225bacb209ddeb8956ebd67412a3af917fe998c8a57f556791c64f",
+      "rgbaSha256": "5579d9726005a455c9c53823517c28dcae93d8db25342886bba7a4684c3ad268"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/helmet_trim_amethyst.png",
+      "texture": "trims/items/helmet_trim",
+      "palette": "trims/color_palettes/amethyst",
+      "width": 16,
+      "height": 16,
+      "bytes": 120,
+      "sha256": "7014502f49b6d37b2a9383bafac1fe9c2a5b549b298cd13a18b0870fd19333d5",
+      "rgbaSha256": "1278f8fa5a10d913c352d64eaebb6226e73c8e80bcd5ca87a152a074733a8ba1"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/helmet_trim_copper.png",
+      "texture": "trims/items/helmet_trim",
+      "palette": "trims/color_palettes/copper",
+      "width": 16,
+      "height": 16,
+      "bytes": 120,
+      "sha256": "e535e8e68a8b094f5558ecd7fbb903a509b4f1b98572bc12bc6f5590671aa98e",
+      "rgbaSha256": "cca9ff664b4ffa83da126aaf814a0693ffdc99a3d3b75aa392acc9cb41fe601d"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/helmet_trim_diamond_darker.png",
+      "texture": "trims/items/helmet_trim",
+      "palette": "trims/color_palettes/diamond_darker",
+      "width": 16,
+      "height": 16,
+      "bytes": 119,
+      "sha256": "7c6170675f25a8550e21f9712f663e79611d5b25411e2399bcd75710c5d79033",
+      "rgbaSha256": "71daf678b4ae4ac71ae0e1d49d2c2e189cfceaea2949203b87ecc3c0d2944e53"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/helmet_trim_diamond.png",
+      "texture": "trims/items/helmet_trim",
+      "palette": "trims/color_palettes/diamond",
+      "width": 16,
+      "height": 16,
+      "bytes": 120,
+      "sha256": "6c80940fb60a9afa778aca193a0a03f703d14d257104db7c2618c698b84a944e",
+      "rgbaSha256": "0db2b5dd59640bc70779736a8043e0c375ef0992026d4e9df90095b0d0aaaf66"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/helmet_trim_emerald.png",
+      "texture": "trims/items/helmet_trim",
+      "palette": "trims/color_palettes/emerald",
+      "width": 16,
+      "height": 16,
+      "bytes": 120,
+      "sha256": "57efcfc6237714f7996667edf94d4916dcfe555d5965bc76d3d22da523a0b96d",
+      "rgbaSha256": "0762b5d8952d600758ddfed63d93befafae2cd1135b071bd8ef193c8440def74"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/helmet_trim_gold_darker.png",
+      "texture": "trims/items/helmet_trim",
+      "palette": "trims/color_palettes/gold_darker",
+      "width": 16,
+      "height": 16,
+      "bytes": 120,
+      "sha256": "0661181480689da99d6e4d6b8402a64583513d3076a0f17e4cb8dc39d543d3c2",
+      "rgbaSha256": "7e09fc2dde3813447c2d48bca43b5f7ec4135fd7269afeb648e2bf94a0d1c41b"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/helmet_trim_gold.png",
+      "texture": "trims/items/helmet_trim",
+      "palette": "trims/color_palettes/gold",
+      "width": 16,
+      "height": 16,
+      "bytes": 120,
+      "sha256": "a3cc128a5f189fb0e80c5d67981243cadc0fff3062b6f02d2982fdf9f7cb0462",
+      "rgbaSha256": "bfdce243799918bb24dafd8811b30d211d8c7a4034d8657f897931f1f9c025e7"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/helmet_trim_iron_darker.png",
+      "texture": "trims/items/helmet_trim",
+      "palette": "trims/color_palettes/iron_darker",
+      "width": 16,
+      "height": 16,
+      "bytes": 120,
+      "sha256": "cdf9eca22d5702715c2e7e5877294be43c665dfab1fafd7abcfa525ba3b83ec4",
+      "rgbaSha256": "15d135aac1c84a2866417efa70c0f59663d315a04bdf7fef6486103a3cb034c6"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/helmet_trim_iron.png",
+      "texture": "trims/items/helmet_trim",
+      "palette": "trims/color_palettes/iron",
+      "width": 16,
+      "height": 16,
+      "bytes": 120,
+      "sha256": "676e6abd168b307b9557c7f8a46629518159d733f65c623dce466015fc640a58",
+      "rgbaSha256": "e1b6c73a9b11b4c3ba25ad190be7e4f0049938c93193553268e5f31a6a3cedb3"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/helmet_trim_lapis.png",
+      "texture": "trims/items/helmet_trim",
+      "palette": "trims/color_palettes/lapis",
+      "width": 16,
+      "height": 16,
+      "bytes": 120,
+      "sha256": "45f3dd644142580d5558128451380ba2b6728a4104765c173109f645c0e8ff49",
+      "rgbaSha256": "0f631db20654ac49b8972f6a37a3b4b8ec8f3f6b8389d3109e1ace0af60e9e51"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/helmet_trim_netherite_darker.png",
+      "texture": "trims/items/helmet_trim",
+      "palette": "trims/color_palettes/netherite_darker",
+      "width": 16,
+      "height": 16,
+      "bytes": 120,
+      "sha256": "a22aa491f08d5687a86a637b0095f54d5470f76de8993369edd11c3c43cef27e",
+      "rgbaSha256": "ba9d252b0ed366f3bc2e210378fed3571966f9fa5031d3d3a277c374e027bc9e"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/helmet_trim_netherite.png",
+      "texture": "trims/items/helmet_trim",
+      "palette": "trims/color_palettes/netherite",
+      "width": 16,
+      "height": 16,
+      "bytes": 120,
+      "sha256": "13d0894cbbcb812c6282009929853eba336bc8b9deed936ac1b7cb7f5ecdea29",
+      "rgbaSha256": "da61982c7253a263765b0119bc40c9fc52545a784c2c08761faa9cb3073765c2"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/helmet_trim_quartz.png",
+      "texture": "trims/items/helmet_trim",
+      "palette": "trims/color_palettes/quartz",
+      "width": 16,
+      "height": 16,
+      "bytes": 120,
+      "sha256": "7291b0cf2a5d1926738e13ac5d47c1850df481dd9903ae9e9566f8f7793b3faa",
+      "rgbaSha256": "123af2dcc3f7fdb89364b32bbc22472947d60ba21d1c9e4b8ec22e836c1af3b5"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/helmet_trim_redstone.png",
+      "texture": "trims/items/helmet_trim",
+      "palette": "trims/color_palettes/redstone",
+      "width": 16,
+      "height": 16,
+      "bytes": 118,
+      "sha256": "3ce2a2f0a11d94584762e9d2fdcd05557b68c0cb192cb86f2302d53b4b0550fb",
+      "rgbaSha256": "76f29fffcdfffb79999687f6fc2a724cf6eee062948bb75b1829322c63aac115"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/leggings_trim_amethyst.png",
+      "texture": "trims/items/leggings_trim",
+      "palette": "trims/color_palettes/amethyst",
+      "width": 16,
+      "height": 16,
+      "bytes": 134,
+      "sha256": "30d570b4210ba3bbb2e8ad3de4f5251a716d77c8d938ce860f0c3aa417cbb845",
+      "rgbaSha256": "1244b367eff854bbdbba5fb1cf5406479ff3105a71dc132d0ae07424c15a2de3"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/leggings_trim_copper.png",
+      "texture": "trims/items/leggings_trim",
+      "palette": "trims/color_palettes/copper",
+      "width": 16,
+      "height": 16,
+      "bytes": 136,
+      "sha256": "97f657c7b6b7031fcad4ca88abf761da8ae1ad42dc81e87fc46e08c614702816",
+      "rgbaSha256": "903b3e9f6d597e26c4a1d78b0d2860152181f445807d9a2fa59504bb6f873c9e"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/leggings_trim_diamond_darker.png",
+      "texture": "trims/items/leggings_trim",
+      "palette": "trims/color_palettes/diamond_darker",
+      "width": 16,
+      "height": 16,
+      "bytes": 133,
+      "sha256": "566593386d19d370ffe743051a61bfab70956a1cc960614241c451cdd5426df7",
+      "rgbaSha256": "038c86ffca44001d89c499fed5bc9f28f7fb423b112acf0ed1231dda9963ec67"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/leggings_trim_diamond.png",
+      "texture": "trims/items/leggings_trim",
+      "palette": "trims/color_palettes/diamond",
+      "width": 16,
+      "height": 16,
+      "bytes": 134,
+      "sha256": "cfc1544f3a6ccab25623a0c1f53d13d400bf1e74f75b123ceef11661208c0591",
+      "rgbaSha256": "232af2f1fafc807b703ec19695bfb3b051456c153c11c39626940ebcbae02ff3"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/leggings_trim_emerald.png",
+      "texture": "trims/items/leggings_trim",
+      "palette": "trims/color_palettes/emerald",
+      "width": 16,
+      "height": 16,
+      "bytes": 136,
+      "sha256": "02d94098aaf045749fc6ddac3e0c053f96b296a77a366d63f106c1821b8475fc",
+      "rgbaSha256": "c5a8c521dc8fdb505f02cef640449a3d9a9dc01449a23fc565d91185d2677b0f"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/leggings_trim_gold_darker.png",
+      "texture": "trims/items/leggings_trim",
+      "palette": "trims/color_palettes/gold_darker",
+      "width": 16,
+      "height": 16,
+      "bytes": 136,
+      "sha256": "ccaa08b999ebba2fdc69d1e781609a64b41937ce94334e7986328471a6a2fcf2",
+      "rgbaSha256": "e789df936fab5afdb4205d2ebeecbe30f1c0a86b9ee5380bf987960ef61711ca"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/leggings_trim_gold.png",
+      "texture": "trims/items/leggings_trim",
+      "palette": "trims/color_palettes/gold",
+      "width": 16,
+      "height": 16,
+      "bytes": 132,
+      "sha256": "0eccaacfed8023262fd32606e561f6fbb0112131e0bcddec24595b40438e2493",
+      "rgbaSha256": "095ebe7ad60f3b2b301a3fa5eb6cd48937d5fb00e734b1806558c02b687e218c"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/leggings_trim_iron_darker.png",
+      "texture": "trims/items/leggings_trim",
+      "palette": "trims/color_palettes/iron_darker",
+      "width": 16,
+      "height": 16,
+      "bytes": 132,
+      "sha256": "d18c96d2d5e4baf287335a3008e54c68f9bcce2e02f79bca6d5efa9ca944693b",
+      "rgbaSha256": "b992d48123c2e28fc37b2b92817e42147735c9d9efba54abae3309df1cf0797b"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/leggings_trim_iron.png",
+      "texture": "trims/items/leggings_trim",
+      "palette": "trims/color_palettes/iron",
+      "width": 16,
+      "height": 16,
+      "bytes": 132,
+      "sha256": "27915efdba97eda8e3a8a4b50ac97844715a0532a8c70770ecb68a901ec37089",
+      "rgbaSha256": "321d03d1943ffd478fe7f0e1e2d75588dbe2d10d70317d7639c0b3cd74bf06b1"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/leggings_trim_lapis.png",
+      "texture": "trims/items/leggings_trim",
+      "palette": "trims/color_palettes/lapis",
+      "width": 16,
+      "height": 16,
+      "bytes": 132,
+      "sha256": "21536820fd98f1904bf68a6f4e3c849509dd0daaeac0ec65372158ddf4b2688e",
+      "rgbaSha256": "f78b3ee042c00e237543882ff0bc808c51a85eb802b7d3c29bb3fd730d113404"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/leggings_trim_netherite_darker.png",
+      "texture": "trims/items/leggings_trim",
+      "palette": "trims/color_palettes/netherite_darker",
+      "width": 16,
+      "height": 16,
+      "bytes": 128,
+      "sha256": "4d06a06db36e762f4716902dc7edb7bc76ed924fe5f3881a5ba85f047822f568",
+      "rgbaSha256": "fdf255a4eae8eb1d492a8c5884af366b5ab545fd23cdc3e878d2f87ea45093e7"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/leggings_trim_netherite.png",
+      "texture": "trims/items/leggings_trim",
+      "palette": "trims/color_palettes/netherite",
+      "width": 16,
+      "height": 16,
+      "bytes": 132,
+      "sha256": "4db00a2ecd422ef43511254e7b9ade2f795cf573f7121c0a1961749688e594ad",
+      "rgbaSha256": "47d2aec180707338061a766045357a3f98a0d0d6d368d273dc86bbfcfc852121"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/leggings_trim_quartz.png",
+      "texture": "trims/items/leggings_trim",
+      "palette": "trims/color_palettes/quartz",
+      "width": 16,
+      "height": 16,
+      "bytes": 128,
+      "sha256": "4c9fb5cf086cba2ec2154609d4405e1b424cc15294bac26a5d09589108fcfda8",
+      "rgbaSha256": "3d779c38ae41fa0788797f793833a77960b1fb29a237e64a3785053583b33099"
+    },
+    {
+      "path": "public/minecraft/textures/trims/items/leggings_trim_redstone.png",
+      "texture": "trims/items/leggings_trim",
+      "palette": "trims/color_palettes/redstone",
+      "width": 16,
+      "height": 16,
+      "bytes": 135,
+      "sha256": "425d7f98ded327de649fc792c94394309bcefa3406ae9970a677d0d77b543212",
+      "rgbaSha256": "779b9e33d90ae2fbb8d218f1d3799f61e4d88fdc8aff8fd325e384589f571130"
+    }
+  ]
+}

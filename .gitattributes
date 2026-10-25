@@ -1,0 +1,21 @@
+* text=auto
+*.command text eol=lf
+*.sh text eol=lf
+*.mjs text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.yaml text eol=lf
+*.ps1 text eol=crlf
+*.cmd text eol=crlf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.zip binary
+*.gz binary
+*.node binary
+*.dll binary
+*.dylib binary
+*.exe binary
+vendor/node/** -text -eol

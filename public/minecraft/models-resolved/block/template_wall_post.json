@@ -1,0 +1,1 @@
+{"textures":{"particle":null},"elements":[{"from":[4,0,4],"to":[12,16,12],"faces":{"down":{"texture":null,"cullface":"down"},"up":{"texture":null,"cullface":"up"},"north":{"texture":null},"south":{"texture":null},"west":{"texture":null},"east":{"texture":null}},"__comment":"Center post"}],"sourceModel":"minecraft:block/template_wall_post","renderType":"elements","layers":[]}

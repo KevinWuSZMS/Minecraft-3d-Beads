@@ -1,0 +1,1 @@
+{"textures":{"particle":"/minecraft/textures/block/piston_side.png"},"elements":[],"sourceModel":"minecraft:block/moving_piston","renderType":"special","blockstateRotation":{"x":0,"y":0,"uvlock":false},"layers":[],"tints":{},"tintContext":"Vanilla inventory defaults; biome-dependent colours use default inventory colour."}

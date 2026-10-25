@@ -1,0 +1,385 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-25T10:29:54.308Z",
+  "project": "MC3DBeads",
+  "portableWebsite": true,
+  "validation": {
+    "method": "Static filesystem/module/URL audit using Node built-ins; every literal public resource and all exported model/data URLs resolve within this project.",
+    "checkedLocalResources": 5946,
+    "resourceReferenceOccurrences": 92244,
+    "remoteRuntimeReferences": [],
+    "informationalUrls": [
+      {
+        "path": "public/index.html",
+        "purpose": "User-clicked documentation link",
+        "url": "https://threejs.org/docs/pages/OrbitControls"
+      }
+    ],
+    "requiredFiles": 17,
+    "symlinkPolicy": "Links are inspected without following them during size enumeration; publication links resolving outside the project fail."
+  },
+  "inventory": {
+    "directoryRegularFiles": 37793,
+    "directoryRegularBytes": 537650944,
+    "projectBytesExcludingGit": 534816063,
+    "publicationCandidateFiles": 16450,
+    "publicationCandidateBytes": 279352436,
+    "publicFiles": 15091,
+    "publicBytes": 22997114,
+    "groups": [
+      {
+        "directory": "(root files)",
+        "files": 10,
+        "bytes": 32704,
+        "publicationBytes": 32704
+      },
+      {
+        "directory": ".cache",
+        "files": 2001,
+        "bytes": 107351127,
+        "publicationBytes": 0
+      },
+      {
+        "directory": ".git",
+        "files": 1893,
+        "bytes": 2834881,
+        "publicationBytes": 0
+      },
+      {
+        "directory": "dist",
+        "files": 15034,
+        "bytes": 22986342,
+        "publicationBytes": 0
+      },
+      {
+        "directory": "docs",
+        "files": 17,
+        "bytes": 8301154,
+        "publicationBytes": 8301154
+      },
+      {
+        "directory": "node_modules",
+        "files": 2409,
+        "bytes": 122341690,
+        "publicationBytes": 0
+      },
+      {
+        "directory": "public",
+        "files": 15091,
+        "bytes": 22997114,
+        "publicationBytes": 22997114
+      },
+      {
+        "directory": "references",
+        "files": 11,
+        "bytes": 10564421,
+        "publicationBytes": 10564421
+      },
+      {
+        "directory": "runtime",
+        "files": 7,
+        "bytes": 145358250,
+        "publicationBytes": 145358250
+      },
+      {
+        "directory": "scripts",
+        "files": 22,
+        "bytes": 2931938,
+        "publicationBytes": 147470
+      },
+      {
+        "directory": "tests",
+        "files": 9,
+        "bytes": 81061,
+        "publicationBytes": 81061
+      },
+      {
+        "directory": "vendor",
+        "files": 1289,
+        "bytes": 91870262,
+        "publicationBytes": 91870262
+      }
+    ],
+    "largestPublicationFiles": [
+      {
+        "path": "runtime/node-v24.22.1-darwin-x64.tar.gz",
+        "bytes": 54382566
+      },
+      {
+        "path": "runtime/node-v24.22.1-darwin-arm64.tar.gz",
+        "bytes": 53062778
+      },
+      {
+        "path": "runtime/node-v24.22.1-win-x64.zip",
+        "bytes": 37748064
+      },
+      {
+        "path": "vendor/node/@img/sharp-libvips-darwin-x64/lib/libvips-cpp.8.18.7.dylib",
+        "bytes": 20369624
+      },
+      {
+        "path": "vendor/node/@img/sharp-win32-x64/lib/libvips-42.dll",
+        "bytes": 19018240
+      },
+      {
+        "path": "vendor/node/@img/sharp-libvips-darwin-arm64/lib/libvips-cpp.8.18.7.dylib",
+        "bytes": 18231688
+      },
+      {
+        "path": "docs/texture-face-coverage.json",
+        "bytes": 4620670
+      },
+      {
+        "path": "public/data/entities.json",
+        "bytes": 3985010
+      },
+      {
+        "path": "vendor/node/three/examples/jsm/libs/rhino3dm/rhino3dm.wasm",
+        "bytes": 2545991
+      },
+      {
+        "path": "vendor/node/three/build/three.cjs",
+        "bytes": 2006834
+      },
+      {
+        "path": "vendor/node/three/build/three.webgpu.js",
+        "bytes": 1875505
+      },
+      {
+        "path": "vendor/node/three/build/three.webgpu.nodes.js",
+        "bytes": 1868520
+      },
+      {
+        "path": "docs/coverage.json",
+        "bytes": 1706291
+      },
+      {
+        "path": "public/data/coverage.json",
+        "bytes": 1706291
+      },
+      {
+        "path": "public/vendor/three.core.js",
+        "bytes": 1403455
+      },
+      {
+        "path": "vendor/node/three/build/three.core.js",
+        "bytes": 1403455
+      },
+      {
+        "path": "public/data/catalog.json",
+        "bytes": 1216395
+      },
+      {
+        "path": "references/mard to hex/Screenshot_2026-10-25-14-00-10-21_2332cb9b27b851b548ba47a91682926c.jpg",
+        "bytes": 1192182
+      },
+      {
+        "path": "references/mard to hex/Screenshot_2026-10-25-14-00-14-66_2332cb9b27b851b548ba47a91682926c.jpg",
+        "bytes": 1124864
+      },
+      {
+        "path": "references/mard to hex/Screenshot_2026-10-25-14-00-19-13_2332cb9b27b851b548ba47a91682926c.jpg",
+        "bytes": 1037350
+      }
+    ],
+    "publicationFilesOver100MiB": [],
+    "links": [],
+    "runtimeBinaries": [],
+    "runtimeArchives": [
+      {
+        "platform": "win-x64",
+        "path": "runtime/node-v24.22.1-win-x64.zip",
+        "nodeVersion": "v24.22.1",
+        "bytes": 37748064,
+        "sha256": "d2046d28c2c3dcd211ac5145c0bf30e2047ef9dfb306693c8c6e2eccd8b95fa5",
+        "verified": true
+      },
+      {
+        "platform": "darwin-arm64",
+        "path": "runtime/node-v24.22.1-darwin-arm64.tar.gz",
+        "nodeVersion": "v24.22.1",
+        "bytes": 53062778,
+        "sha256": "89c682593d76cd44233fa53b1563264e7de9cbb189cad169135c5b4fadfbc0a7",
+        "verified": true
+      },
+      {
+        "platform": "darwin-x64",
+        "path": "runtime/node-v24.22.1-darwin-x64.tar.gz",
+        "nodeVersion": "v24.22.1",
+        "bytes": 54382566,
+        "sha256": "d132557e7ee2b85af08b0c8c34338e65c6430f2238d01f727728ef42dc83b035",
+        "verified": true
+      }
+    ],
+    "vendoredDependencies": [
+      {
+        "name": "three",
+        "version": "0.180.0",
+        "files": 1117,
+        "verifiedFiles": 1117,
+        "bytes": 30764975
+      },
+      {
+        "name": "pngjs",
+        "version": "7.0.0",
+        "files": 27,
+        "verifiedFiles": 27,
+        "bytes": 650101
+      },
+      {
+        "name": "sharp",
+        "version": "0.35.5",
+        "files": 47,
+        "verifiedFiles": 47,
+        "bytes": 962168
+      },
+      {
+        "name": "@img/colour",
+        "version": "1.1.0",
+        "files": 6,
+        "verifiedFiles": 6,
+        "bytes": 73264
+      },
+      {
+        "name": "detect-libc",
+        "version": "2.1.2",
+        "files": 8,
+        "verifiedFiles": 8,
+        "bytes": 26437
+      },
+      {
+        "name": "semver",
+        "version": "7.8.5",
+        "files": 53,
+        "verifiedFiles": 53,
+        "bytes": 101065
+      },
+      {
+        "name": "@img/sharp-win32-x64",
+        "version": "0.35.5",
+        "files": 8,
+        "verifiedFiles": 8,
+        "bytes": 19812379
+      },
+      {
+        "name": "@img/sharp-darwin-arm64",
+        "version": "0.35.5",
+        "files": 5,
+        "verifiedFiles": 5,
+        "bytes": 292231
+      },
+      {
+        "name": "@img/sharp-darwin-x64",
+        "version": "0.35.5",
+        "files": 5,
+        "verifiedFiles": 5,
+        "bytes": 267259
+      },
+      {
+        "name": "@img/sharp-libvips-darwin-arm64",
+        "version": "1.3.4",
+        "files": 6,
+        "verifiedFiles": 6,
+        "bytes": 18243502
+      },
+      {
+        "name": "@img/sharp-libvips-darwin-x64",
+        "version": "1.3.4",
+        "files": 6,
+        "verifiedFiles": 6,
+        "bytes": 20381445
+      }
+    ],
+    "publicationExclusions": [
+      ".git/",
+      ".cache/",
+      "dist/",
+      "node_modules/",
+      "scripts/import-entities-work/",
+      "*.log",
+      "*.tmp"
+    ]
+  },
+  "runtimeBoundary": {
+    "required": [
+      "public/ including local model/texture/font assets and Three.js vendor files",
+      "scripts/server.mjs plus Node.js (system or bundled)",
+      "A browser with WebGL support"
+    ],
+    "notRequiredForNormalUse": [
+      "node_modules",
+      "Codex installation or account",
+      "Python/JDK/Gradle",
+      "The original Minecraft installation",
+      "Internet/CDN access"
+    ],
+    "fonts": "UI uses operating-system fallback fonts (Segoe UI/Microsoft YaHei/PingFang SC/sans-serif), with no remote font requests. Minecraft bitmap fonts are included under public/minecraft/textures/font/.",
+    "developmentOnly": [
+      {
+        "purpose": "Re-import original game assets",
+        "dependencies": [
+          "Python 3.10+ (Pillow for thumbnails)",
+          "Matching Minecraft Java 1.21.1 resource/source JARs and asset index 17"
+        ],
+        "externalEnvironment": true
+      },
+      {
+        "purpose": "Re-extract entity model layers",
+        "dependencies": [
+          "Java 21 JDK",
+          "Matching merged/source JARs",
+          "Gradle dependency cache"
+        ],
+        "externalEnvironment": true
+      },
+      {
+        "purpose": "Offline PNG/SVG model audits and comparison reports",
+        "dependencies": [
+          "Locally vendored pngjs and sharp, prepared with node scripts/prepare-dependencies.mjs"
+        ],
+        "externalEnvironment": false
+      },
+      {
+        "purpose": "Rebuild browser vendor files from package source",
+        "dependencies": [
+          "Locally vendored Three.js package, prepared automatically by scripts/build.mjs"
+        ],
+        "externalEnvironment": false
+      },
+      {
+        "purpose": "Regenerate dynamic item trim textures",
+        "dependencies": [
+          "Locally vendored pngjs",
+          "Included vanilla atlas and palette PNGs"
+        ],
+        "externalEnvironment": false
+      }
+    ]
+  },
+  "provenance": {
+    "minecraft": "Imported Minecraft Java 1.21.1 model/texture/lang/font assets remain attributed to Mojang / Microsoft. This package does not include the full game installation.",
+    "generatedTrimTextures": {
+      "count": 56,
+      "manifest": "docs/generated-trim-textures.json",
+      "sourceEvidence": "docs/trim-texture-sources.json",
+      "algorithm": "Minecraft Java 1.21.1 PalettedPermutations.createPaletteMapping: RGB lookup with integer alpha multiplication",
+      "generator": "scripts/generate-trim-textures.mjs",
+      "verifyCommand": "node scripts/generate-trim-textures.mjs --check",
+      "verifiedSourceAndOutputFiles": 76
+    },
+    "mard": "User-provided reference screenshots in references/mard to hex; H01 transparency corrected by user.",
+    "three": "Three.js 0.180.0 runtime files vendored locally; MIT license retained in public/vendor/LICENSE.three."
+  },
+  "secretScan": {
+    "scope": [
+      "references/",
+      "docs/"
+    ],
+    "textFilesScanned": 8,
+    "findings": [],
+    "disclosure": "Only locations/types are reported, never matched values.",
+    "limits": "Pattern-based text scan; binary images were not OCR-scanned."
+  },
+  "warnings": [],
+  "errors": []
+}

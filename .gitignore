@@ -1,0 +1,15 @@
+/node_modules/
+/dist/
+/.cache/
+*.log
+scripts/import-entities-work/
+.DS_Store
+**/__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx

@@ -1,0 +1,722 @@
+{
+  "schemaVersion": 1,
+  "minecraftVersion": "Java 1.21.1",
+  "palette": "MARD 221",
+  "generatedAt": "2026-10-25T09:55:35.340Z",
+  "sourceHashes": {
+    "palette": "2033d1b7f88422e610f4d566eaea8b0fbbed5f5ef28a26455ed95bdfdecd443b",
+    "colorMatching": "ae075f0e523f56f80737e647d9575d07445cf8677fc96489940f696184ebec27"
+  },
+  "measurement": {
+    "display": "Unlit sRGB swatches. Source texture RGB is multiplied by the stated vanilla tint before matching.",
+    "meanDeltaE00": "Mean CIEDE2000 between each source texel and mapped appearance. For 2x2 only, appearance is the linear-light mean of its four actual MARD beads, converted back to sRGB.",
+    "meanIndividualBeadDeltaE00": "Mean CIEDE2000 over each physical bead separately; a spatial mixture can have larger per-bead error but smaller averaged-appearance error.",
+    "significantEdges": "Horizontal/vertical opaque source neighbours with source ΔE00 >= 5.",
+    "lostSignificantEdges": "Significant edges whose mapped ΔE00 is below max(2, 0.25 * source ΔE00).",
+    "meanSignificantEdgeContrastError": "Mean absolute error in ΔE00 contrast over significant source edges.",
+    "limits": "Four fixed real texture patches; this is not a proof for every Minecraft texture. sRGB swatches do not predict real bead reflectance, lighting, print profiles, or melting."
+  },
+  "fixtures": [
+    {
+      "id": "grass_block_top",
+      "label": "草方块顶面",
+      "file": "block/grass_block_top.png",
+      "tint": [
+        0.48627450980392156,
+        0.7411764705882353,
+        0.4196078431372549
+      ],
+      "region": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "note": "原版默认草色 #7CBD6B",
+      "width": 16,
+      "height": 16,
+      "sourceSha256": "52f44b64ce884a13dfe35e4b4da2e35898b790dd4d7a5ea536f1b0c0d56d29b4",
+      "sourceDistinctRgb": 66,
+      "results": [
+        {
+          "id": "legacy",
+          "label": "旧版 Lab76",
+          "mode": "legacy",
+          "mix2x2": false,
+          "metrics": {
+            "meanDeltaE00": 7.5102,
+            "meanIndividualBeadDeltaE00": 7.5102,
+            "distinctMardCodes": 3,
+            "significantEdgeCount": 226,
+            "lostSignificantEdges": 34,
+            "lostSignificantEdgeRate": 0.1504,
+            "meanSignificantEdgeContrastError": 7.1907,
+            "mixedTexels": 0
+          },
+          "mapperStats": {
+            "mode": "legacy",
+            "mix2x2": false,
+            "fillTransparent": false,
+            "region": [
+              0,
+              0,
+              16,
+              16
+            ],
+            "sourceColors": 62,
+            "paletteColors": 3,
+            "changedMappings": 0,
+            "mixedSourceColors": 0,
+            "pixels": 256,
+            "transparentPixels": 0,
+            "filledTransparentPixels": 0,
+            "sourceEdges": 474,
+            "collapsedEdges": 206,
+            "boundaryCollapseRate": 0.4345991561181435,
+            "boundaryMetric": "solid-assignments",
+            "averageDeltaE2000": 7.513382769876419
+          }
+        },
+        {
+          "id": "accurate",
+          "label": "CIEDE2000",
+          "mode": "accurate",
+          "mix2x2": false,
+          "metrics": {
+            "meanDeltaE00": 6.7816,
+            "meanIndividualBeadDeltaE00": 6.7816,
+            "distinctMardCodes": 4,
+            "significantEdgeCount": 226,
+            "lostSignificantEdges": 6,
+            "lostSignificantEdgeRate": 0.0265,
+            "meanSignificantEdgeContrastError": 5.6725,
+            "mixedTexels": 0
+          },
+          "mapperStats": {
+            "mode": "accurate",
+            "mix2x2": false,
+            "fillTransparent": false,
+            "region": [
+              0,
+              0,
+              16,
+              16
+            ],
+            "sourceColors": 62,
+            "paletteColors": 4,
+            "changedMappings": 0,
+            "mixedSourceColors": 0,
+            "pixels": 256,
+            "transparentPixels": 0,
+            "filledTransparentPixels": 0,
+            "sourceEdges": 474,
+            "collapsedEdges": 143,
+            "boundaryCollapseRate": 0.30168776371308015,
+            "boundaryMetric": "solid-assignments",
+            "averageDeltaE2000": 6.78602577046581
+          }
+        },
+        {
+          "id": "detail",
+          "label": "纹理细节优先",
+          "mode": "detail",
+          "mix2x2": false,
+          "metrics": {
+            "meanDeltaE00": 6.7912,
+            "meanIndividualBeadDeltaE00": 6.7912,
+            "distinctMardCodes": 4,
+            "significantEdgeCount": 226,
+            "lostSignificantEdges": 1,
+            "lostSignificantEdgeRate": 0.0044,
+            "meanSignificantEdgeContrastError": 6.02,
+            "mixedTexels": 0
+          },
+          "mapperStats": {
+            "mode": "detail",
+            "mix2x2": false,
+            "fillTransparent": false,
+            "region": [
+              0,
+              0,
+              16,
+              16
+            ],
+            "sourceColors": 62,
+            "paletteColors": 4,
+            "changedMappings": 4,
+            "mixedSourceColors": 0,
+            "pixels": 256,
+            "transparentPixels": 0,
+            "filledTransparentPixels": 0,
+            "sourceEdges": 474,
+            "collapsedEdges": 127,
+            "boundaryCollapseRate": 0.2679324894514768,
+            "boundaryMetric": "solid-assignments",
+            "averageDeltaE2000": 6.795562059461433
+          }
+        },
+        {
+          "id": "detail_mix2x2",
+          "label": "细节 + 2×2 混色",
+          "mode": "detail",
+          "mix2x2": true,
+          "metrics": {
+            "meanDeltaE00": 2.5129,
+            "meanIndividualBeadDeltaE00": 7.78,
+            "distinctMardCodes": 5,
+            "significantEdgeCount": 226,
+            "lostSignificantEdges": 2,
+            "lostSignificantEdgeRate": 0.0088,
+            "meanSignificantEdgeContrastError": 1.8269,
+            "mixedTexels": 255
+          },
+          "mapperStats": {
+            "mode": "detail",
+            "mix2x2": true,
+            "fillTransparent": false,
+            "region": [
+              0,
+              0,
+              16,
+              16
+            ],
+            "sourceColors": 62,
+            "paletteColors": 5,
+            "changedMappings": 4,
+            "mixedSourceColors": 61,
+            "pixels": 256,
+            "transparentPixels": 0,
+            "filledTransparentPixels": 0,
+            "sourceEdges": 474,
+            "collapsedEdges": 127,
+            "boundaryCollapseRate": 0.2679324894514768,
+            "boundaryMetric": "solid-assignments",
+            "averageDeltaE2000": 2.515931760085638
+          }
+        }
+      ]
+    },
+    {
+      "id": "dirt",
+      "label": "泥土",
+      "file": "block/dirt.png",
+      "region": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "note": "原版无额外染色",
+      "width": 16,
+      "height": 16,
+      "sourceSha256": "1f0f0e619e7dfe683ea45b9254859f14b0ed5f1debdb242ea878828575be5bf0",
+      "sourceDistinctRgb": 7,
+      "results": [
+        {
+          "id": "legacy",
+          "label": "旧版 Lab76",
+          "mode": "legacy",
+          "mix2x2": false,
+          "metrics": {
+            "meanDeltaE00": 5.3568,
+            "meanIndividualBeadDeltaE00": 5.3568,
+            "distinctMardCodes": 6,
+            "significantEdgeCount": 357,
+            "lostSignificantEdges": 103,
+            "lostSignificantEdgeRate": 0.2885,
+            "meanSignificantEdgeContrastError": 6.4228,
+            "mixedTexels": 0
+          },
+          "mapperStats": {
+            "mode": "legacy",
+            "mix2x2": false,
+            "fillTransparent": false,
+            "region": [
+              0,
+              0,
+              16,
+              16
+            ],
+            "sourceColors": 7,
+            "paletteColors": 6,
+            "changedMappings": 0,
+            "mixedSourceColors": 0,
+            "pixels": 256,
+            "transparentPixels": 0,
+            "filledTransparentPixels": 0,
+            "sourceEdges": 360,
+            "collapsedEdges": 103,
+            "boundaryCollapseRate": 0.2861111111111111,
+            "boundaryMetric": "solid-assignments",
+            "averageDeltaE2000": 5.356828113653206
+          }
+        },
+        {
+          "id": "accurate",
+          "label": "CIEDE2000",
+          "mode": "accurate",
+          "mix2x2": false,
+          "metrics": {
+            "meanDeltaE00": 5.3537,
+            "meanIndividualBeadDeltaE00": 5.3537,
+            "distinctMardCodes": 5,
+            "significantEdgeCount": 357,
+            "lostSignificantEdges": 104,
+            "lostSignificantEdgeRate": 0.2913,
+            "meanSignificantEdgeContrastError": 6.4461,
+            "mixedTexels": 0
+          },
+          "mapperStats": {
+            "mode": "accurate",
+            "mix2x2": false,
+            "fillTransparent": false,
+            "region": [
+              0,
+              0,
+              16,
+              16
+            ],
+            "sourceColors": 7,
+            "paletteColors": 5,
+            "changedMappings": 0,
+            "mixedSourceColors": 0,
+            "pixels": 256,
+            "transparentPixels": 0,
+            "filledTransparentPixels": 0,
+            "sourceEdges": 360,
+            "collapsedEdges": 107,
+            "boundaryCollapseRate": 0.2972222222222222,
+            "boundaryMetric": "solid-assignments",
+            "averageDeltaE2000": 5.3537175920028846
+          }
+        },
+        {
+          "id": "detail",
+          "label": "纹理细节优先",
+          "mode": "detail",
+          "mix2x2": false,
+          "metrics": {
+            "meanDeltaE00": 5.8452,
+            "meanIndividualBeadDeltaE00": 5.8452,
+            "distinctMardCodes": 7,
+            "significantEdgeCount": 357,
+            "lostSignificantEdges": 0,
+            "lostSignificantEdgeRate": 0,
+            "meanSignificantEdgeContrastError": 2.6446,
+            "mixedTexels": 0
+          },
+          "mapperStats": {
+            "mode": "detail",
+            "mix2x2": false,
+            "fillTransparent": false,
+            "region": [
+              0,
+              0,
+              16,
+              16
+            ],
+            "sourceColors": 7,
+            "paletteColors": 7,
+            "changedMappings": 2,
+            "mixedSourceColors": 0,
+            "pixels": 256,
+            "transparentPixels": 0,
+            "filledTransparentPixels": 0,
+            "sourceEdges": 360,
+            "collapsedEdges": 0,
+            "boundaryCollapseRate": 0,
+            "boundaryMetric": "solid-assignments",
+            "averageDeltaE2000": 5.845159734057521
+          }
+        },
+        {
+          "id": "detail_mix2x2",
+          "label": "细节 + 2×2 混色",
+          "mode": "detail",
+          "mix2x2": true,
+          "metrics": {
+            "meanDeltaE00": 2.9776,
+            "meanIndividualBeadDeltaE00": 6.9716,
+            "distinctMardCodes": 9,
+            "significantEdgeCount": 357,
+            "lostSignificantEdges": 0,
+            "lostSignificantEdgeRate": 0,
+            "meanSignificantEdgeContrastError": 1.0287,
+            "mixedTexels": 252
+          },
+          "mapperStats": {
+            "mode": "detail",
+            "mix2x2": true,
+            "fillTransparent": false,
+            "region": [
+              0,
+              0,
+              16,
+              16
+            ],
+            "sourceColors": 7,
+            "paletteColors": 9,
+            "changedMappings": 2,
+            "mixedSourceColors": 6,
+            "pixels": 256,
+            "transparentPixels": 0,
+            "filledTransparentPixels": 0,
+            "sourceEdges": 360,
+            "collapsedEdges": 0,
+            "boundaryCollapseRate": 0,
+            "boundaryMetric": "solid-assignments",
+            "averageDeltaE2000": 2.9776006332262313
+          }
+        }
+      ]
+    },
+    {
+      "id": "diamond_ore",
+      "label": "钻石矿石",
+      "file": "block/diamond_ore.png",
+      "region": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "note": "原版无额外染色",
+      "width": 16,
+      "height": 16,
+      "sourceSha256": "79abdde719a9bdf99279ab3f19b90da8e949c6c7cb7dcf453e0c3ce1f568577f",
+      "sourceDistinctRgb": 10,
+      "results": [
+        {
+          "id": "legacy",
+          "label": "旧版 Lab76",
+          "mode": "legacy",
+          "mix2x2": false,
+          "metrics": {
+            "meanDeltaE00": 4.9527,
+            "meanIndividualBeadDeltaE00": 4.9527,
+            "distinctMardCodes": 8,
+            "significantEdgeCount": 325,
+            "lostSignificantEdges": 71,
+            "lostSignificantEdgeRate": 0.2185,
+            "meanSignificantEdgeContrastError": 5.183,
+            "mixedTexels": 0
+          },
+          "mapperStats": {
+            "mode": "legacy",
+            "mix2x2": false,
+            "fillTransparent": false,
+            "region": [
+              0,
+              0,
+              16,
+              16
+            ],
+            "sourceColors": 10,
+            "paletteColors": 8,
+            "changedMappings": 0,
+            "mixedSourceColors": 0,
+            "pixels": 256,
+            "transparentPixels": 0,
+            "filledTransparentPixels": 0,
+            "sourceEdges": 384,
+            "collapsedEdges": 69,
+            "boundaryCollapseRate": 0.1796875,
+            "boundaryMetric": "solid-assignments",
+            "averageDeltaE2000": 4.952672339912144
+          }
+        },
+        {
+          "id": "accurate",
+          "label": "CIEDE2000",
+          "mode": "accurate",
+          "mix2x2": false,
+          "metrics": {
+            "meanDeltaE00": 4.9462,
+            "meanIndividualBeadDeltaE00": 4.9462,
+            "distinctMardCodes": 8,
+            "significantEdgeCount": 325,
+            "lostSignificantEdges": 69,
+            "lostSignificantEdgeRate": 0.2123,
+            "meanSignificantEdgeContrastError": 5.1411,
+            "mixedTexels": 0
+          },
+          "mapperStats": {
+            "mode": "accurate",
+            "mix2x2": false,
+            "fillTransparent": false,
+            "region": [
+              0,
+              0,
+              16,
+              16
+            ],
+            "sourceColors": 10,
+            "paletteColors": 8,
+            "changedMappings": 0,
+            "mixedSourceColors": 0,
+            "pixels": 256,
+            "transparentPixels": 0,
+            "filledTransparentPixels": 0,
+            "sourceEdges": 384,
+            "collapsedEdges": 69,
+            "boundaryCollapseRate": 0.1796875,
+            "boundaryMetric": "solid-assignments",
+            "averageDeltaE2000": 4.946179251744066
+          }
+        },
+        {
+          "id": "detail",
+          "label": "纹理细节优先",
+          "mode": "detail",
+          "mix2x2": false,
+          "metrics": {
+            "meanDeltaE00": 5.6302,
+            "meanIndividualBeadDeltaE00": 5.6302,
+            "distinctMardCodes": 9,
+            "significantEdgeCount": 325,
+            "lostSignificantEdges": 22,
+            "lostSignificantEdgeRate": 0.0677,
+            "meanSignificantEdgeContrastError": 3.741,
+            "mixedTexels": 0
+          },
+          "mapperStats": {
+            "mode": "detail",
+            "mix2x2": false,
+            "fillTransparent": false,
+            "region": [
+              0,
+              0,
+              16,
+              16
+            ],
+            "sourceColors": 10,
+            "paletteColors": 9,
+            "changedMappings": 3,
+            "mixedSourceColors": 0,
+            "pixels": 256,
+            "transparentPixels": 0,
+            "filledTransparentPixels": 0,
+            "sourceEdges": 384,
+            "collapsedEdges": 22,
+            "boundaryCollapseRate": 0.057291666666666664,
+            "boundaryMetric": "solid-assignments",
+            "averageDeltaE2000": 5.63015574909629
+          }
+        },
+        {
+          "id": "detail_mix2x2",
+          "label": "细节 + 2×2 混色",
+          "mode": "detail",
+          "mix2x2": true,
+          "metrics": {
+            "meanDeltaE00": 2.2224,
+            "meanIndividualBeadDeltaE00": 7.0989,
+            "distinctMardCodes": 16,
+            "significantEdgeCount": 325,
+            "lostSignificantEdges": 0,
+            "lostSignificantEdgeRate": 0,
+            "meanSignificantEdgeContrastError": 1.8654,
+            "mixedTexels": 256
+          },
+          "mapperStats": {
+            "mode": "detail",
+            "mix2x2": true,
+            "fillTransparent": false,
+            "region": [
+              0,
+              0,
+              16,
+              16
+            ],
+            "sourceColors": 10,
+            "paletteColors": 16,
+            "changedMappings": 3,
+            "mixedSourceColors": 10,
+            "pixels": 256,
+            "transparentPixels": 0,
+            "filledTransparentPixels": 0,
+            "sourceEdges": 384,
+            "collapsedEdges": 22,
+            "boundaryCollapseRate": 0.057291666666666664,
+            "boundaryMetric": "solid-assignments",
+            "averageDeltaE2000": 2.222430629815205
+          }
+        }
+      ]
+    },
+    {
+      "id": "creeper_face",
+      "label": "苦力怕正脸",
+      "file": "entity/creeper/creeper.png",
+      "region": [
+        8,
+        8,
+        16,
+        16
+      ],
+      "note": "面部 UV [8,8,16,16]",
+      "width": 8,
+      "height": 8,
+      "sourceSha256": "a98947a543623cedca72016e06aa24dc34807251ff8e2433be158c86a977c9e9",
+      "sourceDistinctRgb": 50,
+      "results": [
+        {
+          "id": "legacy",
+          "label": "旧版 Lab76",
+          "mode": "legacy",
+          "mix2x2": false,
+          "metrics": {
+            "meanDeltaE00": 6.2571,
+            "meanIndividualBeadDeltaE00": 6.2571,
+            "distinctMardCodes": 15,
+            "significantEdgeCount": 95,
+            "lostSignificantEdges": 4,
+            "lostSignificantEdgeRate": 0.0421,
+            "meanSignificantEdgeContrastError": 5.6958,
+            "mixedTexels": 0
+          },
+          "mapperStats": {
+            "mode": "legacy",
+            "mix2x2": false,
+            "fillTransparent": false,
+            "region": [
+              8,
+              8,
+              16,
+              16
+            ],
+            "sourceColors": 50,
+            "paletteColors": 15,
+            "changedMappings": 0,
+            "mixedSourceColors": 0,
+            "pixels": 64,
+            "transparentPixels": 0,
+            "filledTransparentPixels": 0,
+            "sourceEdges": 106,
+            "collapsedEdges": 7,
+            "boundaryCollapseRate": 0.0660377358490566,
+            "boundaryMetric": "solid-assignments",
+            "averageDeltaE2000": 6.257073309580939
+          }
+        },
+        {
+          "id": "accurate",
+          "label": "CIEDE2000",
+          "mode": "accurate",
+          "mix2x2": false,
+          "metrics": {
+            "meanDeltaE00": 5.5573,
+            "meanIndividualBeadDeltaE00": 5.5573,
+            "distinctMardCodes": 16,
+            "significantEdgeCount": 95,
+            "lostSignificantEdges": 9,
+            "lostSignificantEdgeRate": 0.0947,
+            "meanSignificantEdgeContrastError": 4.4536,
+            "mixedTexels": 0
+          },
+          "mapperStats": {
+            "mode": "accurate",
+            "mix2x2": false,
+            "fillTransparent": false,
+            "region": [
+              8,
+              8,
+              16,
+              16
+            ],
+            "sourceColors": 50,
+            "paletteColors": 16,
+            "changedMappings": 0,
+            "mixedSourceColors": 0,
+            "pixels": 64,
+            "transparentPixels": 0,
+            "filledTransparentPixels": 0,
+            "sourceEdges": 106,
+            "collapsedEdges": 14,
+            "boundaryCollapseRate": 0.1320754716981132,
+            "boundaryMetric": "solid-assignments",
+            "averageDeltaE2000": 5.557311790300768
+          }
+        },
+        {
+          "id": "detail",
+          "label": "纹理细节优先",
+          "mode": "detail",
+          "mix2x2": false,
+          "metrics": {
+            "meanDeltaE00": 5.7839,
+            "meanIndividualBeadDeltaE00": 5.7839,
+            "distinctMardCodes": 16,
+            "significantEdgeCount": 95,
+            "lostSignificantEdges": 2,
+            "lostSignificantEdgeRate": 0.0211,
+            "meanSignificantEdgeContrastError": 4.023,
+            "mixedTexels": 0
+          },
+          "mapperStats": {
+            "mode": "detail",
+            "mix2x2": false,
+            "fillTransparent": false,
+            "region": [
+              8,
+              8,
+              16,
+              16
+            ],
+            "sourceColors": 50,
+            "paletteColors": 16,
+            "changedMappings": 9,
+            "mixedSourceColors": 0,
+            "pixels": 64,
+            "transparentPixels": 0,
+            "filledTransparentPixels": 0,
+            "sourceEdges": 106,
+            "collapsedEdges": 7,
+            "boundaryCollapseRate": 0.0660377358490566,
+            "boundaryMetric": "solid-assignments",
+            "averageDeltaE2000": 5.783917544664829
+          }
+        },
+        {
+          "id": "detail_mix2x2",
+          "label": "细节 + 2×2 混色",
+          "mode": "detail",
+          "mix2x2": true,
+          "metrics": {
+            "meanDeltaE00": 2.7727,
+            "meanIndividualBeadDeltaE00": 7.6388,
+            "distinctMardCodes": 22,
+            "significantEdgeCount": 95,
+            "lostSignificantEdges": 1,
+            "lostSignificantEdgeRate": 0.0105,
+            "meanSignificantEdgeContrastError": 2.2369,
+            "mixedTexels": 56
+          },
+          "mapperStats": {
+            "mode": "detail",
+            "mix2x2": true,
+            "fillTransparent": false,
+            "region": [
+              8,
+              8,
+              16,
+              16
+            ],
+            "sourceColors": 50,
+            "paletteColors": 22,
+            "changedMappings": 9,
+            "mixedSourceColors": 49,
+            "pixels": 64,
+            "transparentPixels": 0,
+            "filledTransparentPixels": 0,
+            "sourceEdges": 106,
+            "collapsedEdges": 7,
+            "boundaryCollapseRate": 0.0660377358490566,
+            "boundaryMetric": "solid-assignments",
+            "averageDeltaE2000": 2.772710527606586
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {prepareDependencies} from './prepare-dependencies.mjs';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+await prepareDependencies({quiet:true});
+await fs.mkdir(path.join(root,'public/vendor'),{recursive:true});
+for(const [from,to] of [['build/three.module.js','three.module.js'],['build/three.core.js','three.core.js'],['examples/jsm/controls/OrbitControls.js','OrbitControls.js'],['LICENSE','LICENSE.three']]) await fs.copyFile(path.join(root,'node_modules/three',from),path.join(root,'public/vendor',to));
+await fs.cp(path.join(root,'public'),path.join(root,'dist'),{recursive:true});
+console.log('Built offline site in dist/');

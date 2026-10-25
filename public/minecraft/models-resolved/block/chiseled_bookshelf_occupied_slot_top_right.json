@@ -1,0 +1,1 @@
+{"textures":{"texture":"/minecraft/textures/block/chiseled_bookshelf_occupied.png"},"elements":[{"from":[0,8,0],"to":[5,16,0],"faces":{"north":{"uv":[11,0,16,8],"texture":"/minecraft/textures/block/chiseled_bookshelf_occupied.png","cullface":"north"}}}],"sourceModel":"minecraft:block/chiseled_bookshelf_occupied_slot_top_right","renderType":"elements","layers":[]}

@@ -1,0 +1,6 @@
+{
+  "name": "mc3dbeads", "version": "1.0.0", "private": true, "type": "module",
+  "description": "Minecraft Java 1.21.1 MARD 221 立体拼豆工作台",
+  "scripts": { "start": "node scripts/server.mjs", "build": "node scripts/build.mjs", "prepare:offline": "node scripts/prepare-dependencies.mjs", "pretest": "node scripts/prepare-dependencies.mjs", "test": "node --test tests/*.test.mjs" },
+  "dependencies": { "three": "0.180.0" }
+}

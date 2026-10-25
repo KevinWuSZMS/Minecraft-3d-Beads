@@ -1,0 +1,1 @@
+{"textures":{"particle":null},"elements":[{"from":[5,0,0],"to":[11,16,8],"faces":{"down":{"texture":null,"cullface":"down"},"up":{"texture":null,"cullface":"up"},"north":{"texture":null,"cullface":"north"},"west":{"texture":null},"east":{"texture":null}}}],"sourceModel":"minecraft:block/template_wall_side_tall","renderType":"elements","layers":[]}

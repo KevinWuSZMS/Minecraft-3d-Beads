@@ -1,0 +1,1 @@
+{"textures":{"particle":null},"elements":[{"from":[7,0,7],"to":[9,16,9],"faces":{"east":{"uv":[7,0,9,16],"texture":null}}}],"ambientocclusion":false,"sourceModel":"minecraft:block/template_glass_pane_noside_alt","renderType":"elements","layers":[]}

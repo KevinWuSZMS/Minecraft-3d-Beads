@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "minecraftVersion": "Java 1.21.1",
+  "sourceMethod": "Read existing local NeoForge 21.1.259 resource/source artifacts without launching or modifying Minecraft.",
+  "atlas": {
+    "path": "public/minecraft/atlases/blocks.json",
+    "jar": "neoforge-21.1.259-client-extra-aka-minecraft-resources.jar",
+    "jarEntry": "assets/minecraft/atlases/blocks.json",
+    "sha256": "1b388e8c8a29884fe116803caf00249ab9150e5490bab735c567fabe8b39df6b"
+  },
+  "algorithm": {
+    "jar": "neoforge-21.1.259-sources.jar",
+    "jarEntry": "net/minecraft/client/renderer/texture/atlas/sources/PalettedPermutations.java",
+    "sha256": "de28470975110a74245346bf1c372ef7cacc489d65672ca83528cb910fe2dbba",
+    "method": "createPaletteMapping",
+    "sourceLines": [
+      85,
+      109
+    ],
+    "pixelFormat": "NativeImage ABGR32; channel-equivalent RGBA conversion preserves RGB and alpha exactly.",
+    "rules": [
+      "Build a row-major map from nonzero-alpha key-palette RGB to corresponding permutation-palette RGBA; later duplicate key colors win.",
+      "Fully transparent source pixels are returned unchanged, including their RGB channels.",
+      "For other pixels use mapped target RGB/alpha, or original RGB with alpha 255 if absent from key palette.",
+      "Output alpha = floor(source alpha * mapped alpha / 255)."
+    ]
+  }
+}

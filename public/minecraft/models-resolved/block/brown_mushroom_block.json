@@ -1,0 +1,1 @@
+{"textures":{"particle":"/minecraft/textures/block/brown_mushroom_block.png","texture":"/minecraft/textures/block/brown_mushroom_block.png"},"elements":[{"from":[0,0,0],"to":[16,16,0],"faces":{"north":{"texture":"/minecraft/textures/block/brown_mushroom_block.png","cullface":"north"}}}],"sourceModel":"minecraft:block/brown_mushroom_block","renderType":"elements","layers":[]}

@@ -1,0 +1,1 @@
+{"textures":{"particle":"/minecraft/textures/block/mushroom_block_inside.png","texture":"/minecraft/textures/block/mushroom_block_inside.png"},"elements":[{"from":[0,0,0],"to":[16,16,0],"faces":{"north":{"texture":"/minecraft/textures/block/mushroom_block_inside.png","cullface":"north"}}}],"sourceModel":"minecraft:block/mushroom_block_inside","renderType":"elements","layers":[]}

@@ -1,0 +1,1 @@
+{"textures":{"texture":null},"elements":[{"from":[10,8,0],"to":[16,16,0],"faces":{"north":{"uv":[0,0,6,8],"texture":null,"cullface":"north"}}}],"sourceModel":"minecraft:block/template_chiseled_bookshelf_slot_top_left","renderType":"elements","layers":[]}

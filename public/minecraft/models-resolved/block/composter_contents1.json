@@ -1,0 +1,1 @@
+{"textures":{"particle":"/minecraft/textures/block/composter_compost.png","inside":"/minecraft/textures/block/composter_compost.png"},"elements":[{"from":[2,0,2],"to":[14,3,14],"faces":{"up":{"texture":"/minecraft/textures/block/composter_compost.png"}}}],"sourceModel":"minecraft:block/composter_contents1","renderType":"elements","layers":[]}
